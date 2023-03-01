@@ -2,9 +2,31 @@ body{
 	margin : 0px;
 	background-color : #EDF1D6;
 }
-.Gallery-Board{
-	height : 600px;
-	border : 15px solid;
+.contact-container{
+	
+	border : 5px solid;
+	background-color : green;
+	margin-top : 2%;
+	margin-left : 20%;
+	margin-right : 50%;
+	width : 800px;
+	
+	
+}
+.gallery-container{
+	background-color : #9DC08B;
+	border : 5px solid;
+	
+	
+	padding-left : 20%;
+	padding-right : 20%;
+	
+	height : auto;
+	width : auto;
+}
+#gallery-font{
+	font-family: 'Mynerve', cursive;
+	font-size : 40px;
 }
 .heading{
 	border: 10px solid;
@@ -22,10 +44,8 @@ body{
 	padding-top : 5px;
 }
 .image{
-	width:200px ;
-	height: 150px;
-	box-shadow : 0px 5px 20px 2px;
-	display : inline;
+	border-radius: 10% 30%;
+	margin :5%;
 	
 }
 .nav{
@@ -36,4 +56,9 @@ body{
 	margin-right : 10%;
 	padding-left : 10%;
 	padding-right : 10%;	
+}
+.video-container{
+	margin-top : 2%;
+	padding-left : 30%;
+	padding-right : 50%;
 }
