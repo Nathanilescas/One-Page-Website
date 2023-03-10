@@ -1,6 +1,6 @@
 body{
 	margin : 0px;
-	background-color : #EDF1D6;
+	background-color : #86cbc8;
 }
 
 
@@ -8,32 +8,38 @@ body{
 	font-family: 'Mynerve', cursive;
 	font-size : 40px;
 }
-.heading{
-	border: 10px solid;
-	position : absolute;
-	top:30%;
-	left:40%;
+
+/* ================================
+    Heading
+   ================================*/
+.heading img {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+.heading h1{
+    color: white;
+    position: absolute;
+    margin-left: 40%;
+    margin-right:auto;
+    margin-top: 5%;
+    z-index: 2;
+    text-align: center;
+	border: 10px solid black;
 	padding: 3%;
 	background: rgba(0, 0, 0, .7);
 	transition-property: background;
     transition-duration: .4s;
     transition-delay: 0s;
     transition-timing-function: ease-in-out;
-	
 }
-.heading:hover {
-
+.heading h1:hover {
 	background: rgba(0, 0, 0,.5);
 }
 
-.heading h1 {
-	color: white;
-}
-
-.heading-padding {
-    padding-bottom: 40px;
-}
 .Header-container{
+    text-align: center;
 	font-family: 'Mynerve', cursive;
 	box-shadow : 0px 5px 20px 2px;
 	border-bottom-style: groove;
@@ -68,15 +74,20 @@ body{
 
 .container .heading-padding h1 {
 	text-align: center;
-	margin-top: 60px;
-	margin-bottom: 10px;
-	padding-bottom: 0;
+	margin-top: 10px;
+	margin-bottom: 40px;
 	font-size: 40px;
 	font-family: 'Mynerve', cursive;
+    font-weight: 900;
+    color: #000;
 }
 .rsvp-text {
 	text-align: center;
 	padding-top: 10px;
+}
+.rsvp {
+    border: 2px solid black;
+    float: left;
 }
 
 /* ===========================================
@@ -130,23 +141,19 @@ body{
 /* =====================================
     PHOTO OVERLAY TRANSITIONS
    ======================================*/
-
 .photo-overlay {
     opacity: 0;
     transition: opacity .5s;
     border-radius: 10px;
     cursor: pointer;
 }
-
 .photo-overlay:hover {
     opacity: 1;
 }
-
 .photo img {
     transition: transform .5s;
     transform-origin: 50% 50%;
 }
-
 .photo:hover img {
     transform: scale(1.1);
 }
@@ -161,14 +168,16 @@ body{
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100, 65, 0, 0.3);
+    background-color:#349490;
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 #CONTACT {
-    background-color: #f5f3f3;
+    background-color: #349490;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
-
 .reservation {
     width: 60%;
     padding: 10px;
@@ -177,7 +186,6 @@ body{
     background-color: rgba(100, 65, 0, 0.3);
     box-shadow: -1px -1px 1px rgba(0, 0, 0, 1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
-
 .reservation h2 {
     width: 70%;
     text-align: center;
@@ -188,7 +196,6 @@ body{
     letter-spacing: 0pt;
     word-spacing: 0pt;
 }
-
 .reservation h2 span {
     width: 70%;
     text-align: center;
@@ -200,13 +207,11 @@ body{
     letter-spacing: .4pt;
     word-spacing: .3pt;
 }
-
 .reservation p {
     color: #13161b;
     width: 50%;
     margin: 0 auto;
 }
-
 .reservation form {
     font-size: 15px;
     outline: none;
@@ -222,48 +227,74 @@ body{
     font-family: 'raleway', sans-serif;
 }
 
-.reservation input [type="text"] {
-    font-size: 15px;
-    outline: none;
-    font-weight: 600;
-    color: #8d8e8f;
-    padding: 2% 1% 2% 7%;
-    width: 80%;
-    border-top: 1px solid #090b0d;
-    border-right: 2px solid #424549;
-    border-bottom: 2px solid #424549;
-    border-left: 1px solid #090b0d;
-    margin: 10px 1em;
-    border-radius: 7px;
-    background: #13161b;
-    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
-    font-family: 'Raleway', sans-serif;
+.form-rsvp input:nth-child(2) {
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    border-radius: 5%;
+    background: #CBEDD5;
+    width: 260px;
+    height: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+    margin-left: 70px;
+    margin-right: 120px;
+}
+.form-rsvp input:nth-child(3) {
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    border-radius: 5%;
+    background: #CBEDD5;
+    width: 260px;
+    height: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+
+}
+.form-rsvp input:nth-child(4) {
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    border-radius: 5%;
+    background: #CBEDD5;
+    width: 260px;
+    height: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+    margin-left: 70px;
+    margin-top: 60px;
+
+}
+.form-rsvp input:nth-child(5) {
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    border-radius: 5%;
+    background: #CBEDD5;
+    width: 260px;
+    height: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+    margin-left: 120px;
+    margin-top: 60px;
+
 }
 
-.reservation input [type="text"]:hover {
-    box-shadow: 0 0 18px rgba(100, 65, 0, 0.8);
-}
-.form-spacer {
-    padding: 30px 39px;
-}
+
 
 .terms {
-	padding-top: 38px;
-	padding-right: 20px;
     font-size: 14px;
     line-height: 5px;
     color: #000;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    display: inline;
     float: right;
+    margin-top: 100px;
 }
-
 .terms:hover {
     color: orange;
     text-decoration: underline;
 }
+
+
 
 .submit input[type="submit"] {
     color: rgb(255, 255, 255);
@@ -273,9 +304,11 @@ body{
     outline: none;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-	margin-top: 15px;
+	margin-top: 40px;
+    margin-left: 300px;
     padding: 7px 0px;
     width: 25%;
+    height: 60px;
     font-size: 18px;
     transition: border-color 0.3s color 0.3s background-color 0.3s;
     border-radius: 7px;
@@ -287,6 +320,10 @@ body{
     background-color: #8d8e8f;
     box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
 }
+
+
+
+
 /* =============================================================
     FOOTER STYLES
    ============================================================*/
